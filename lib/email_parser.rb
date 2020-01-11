@@ -10,7 +10,7 @@ class EmailAddressParser
       parsed_emails= emails.split.collect do |address|
         address.split(",").join
       end 
-     parsed_emails.unique 
+     parsed_emails.uniq
   end 
 end 
 
