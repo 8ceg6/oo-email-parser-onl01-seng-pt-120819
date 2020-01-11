@@ -1,11 +1,17 @@
+require 'pry'
 class EmailAddressParser  
   attr_accessor :emails 
   
   def initialize(emails)
       @emails = emails
-  
   end 
   
+  def parse 
+      parsed_emails= emails.split.collect do |address|
+        address.split(",").join
+      end 
+      binding.pry 
+  end 
 end 
 
 
