@@ -9,8 +9,9 @@ class EmailAddressParser
   def parse 
       parsed_emails= emails.split.collect do |address|
         address.split(",").join
-      end 
       binding.pry 
+      end 
+      
   end 
 end 
 
